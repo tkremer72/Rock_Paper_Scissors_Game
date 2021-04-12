@@ -1,0 +1,303 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+.logo-image, .footer-logo {
+     width: 55px;
+     height: auto;
+}
+.logo-text {
+     font-family: Montserrat Alternates;
+     font-weight: 600;
+     font-style: none;
+     font-size: 36px;
+     line-height: 32px;
+     letter-spacing: 0.03em;
+}
+.navbar a {
+     text-decoration: none;
+     color: rgba(0, 0, 0, 1);
+}
+.navbar a:hover {
+     color: #94A2FB;
+}
+.navbar {
+     align-items: center;
+     background-color: #FFFFFF;
+     color: rgba(0, 0, 0, 1);
+     display: flex;
+     font-family: Poppins;
+     font-size: 25px;
+     justify-content: space-around;
+}
+.nav-list {
+     list-style: none;
+}
+.nav-list, .list-item {
+     display: inline-block;
+     padding: 20px 10px;
+}
+
+/* Hide menu on larger screens */
+.menu {
+     display: none;
+}
+.menu-line {
+     background-color: #94A2FB;
+     width: 25px;
+     height: 3px;
+     margin-bottom: 4px;
+}
+
+/* Style the footer and footer elements */
+.footer-logo {
+     margin-top: 0px;
+     margin-bottom: 0px;
+}
+.footer-text {
+     margin-top: 25px;
+     font-family: Montserrat Alternates;
+     font-weight: 600;
+     font-style: normal;
+     font-size: 21px;
+}
+.webmaster {
+     text-decoration: none;
+}
+.footer-info {
+     width: 100%;
+     font-family: Poppins;
+     font-weight: 200;
+     font-size: 18px;
+     font-style: normal;
+     line-height: 32px;
+     letter-spacing: 0.03em;
+}
+.webmaster-contact {
+     margin-top: 13px;
+}
+.footer-container-fluid {
+     display: flex;
+     justify-content: space-evenly;
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: #FFFFFF;
+     text-align: center;
+}
+
+
+/* Game parts and components */
+.main-content {
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+h1 {
+     font-family: Poppins;
+     font-weight: 800;
+     margin: 15px 0;
+}
+.game-container {
+     display: flex;
+}
+.game-container .section {
+     width: 500px;
+     margin: 20px 50px;
+}
+.section .info {
+     background: rgb(10, 10, 10);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 70px;
+}
+.info span, .info h3 {
+     font-size: 25px;
+     font-weight: normal;
+     margin: 0px 10px;
+     font-family: Poppins;
+     color: white;
+}
+.show {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(41, 40, 40);
+     height: 350px;
+}
+.show i {
+     font-size: 200px;
+     color: #E0AC69;
+}
+h2 {
+     font-family: Poppins;
+     font-weight: bold;
+     color: green;
+     margin: 25px 0 25px 0;
+}
+.game-selection {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 350px;
+     height: 100px;
+}
+.game-selection button {
+     margin: 0 20px;
+     padding: 20px;
+     border-radius: 20%;
+     border: none;
+     cursor: pointer;
+     background-color: rgb(41, 40, 40);
+     font-size: 50px;
+     color: #E0AC69;
+}
+/* Media query for smaller devices  */
+@media all and (max-width: 480px) {
+     .main-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 135px;
+     }
+     h1 {
+          font-family: Poppins;
+          font-weight: 800;
+          margin: 15px 0 0 5px;
+     }
+     .game-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-left: 5px;
+     }
+     .game-container .section {
+          width: 320px;
+     }
+     .section .info {
+          background: rgb(10, 10, 10);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 70px;
+     }
+     .info span, .info h3 {
+          font-size: 25px;
+          font-weight: normal;
+          margin: 0px 10px;
+          font-family: Poppins;
+          color: white;
+     }
+     .show {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgb(41, 40, 40);
+          height: 350px;
+     }
+     .show i {
+          font-size: 200px;
+          color: #E0AC69;
+     }
+     h2 {
+          margin-top: 25px;
+          font-family: Poppins;
+          font-weight: bold;
+          color: green;
+          margin-left: 5px;
+
+     }
+     .game-selection {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 320px;
+          height: 100px;
+     }
+     .game-selection button {
+          margin: 0 20px;
+          padding: 20px;
+          border-radius: 20%;
+          border: none;
+          cursor: pointer;
+          background-color: rgb(41, 40, 40);
+          font-size: 50px;
+          color: #E0AC69;
+     }
+     .navbar {
+          flex-direction: column;
+          position: relative;
+          width: 100%;
+     }
+     .logo-container {
+          width: 100%;
+          margin-left: 25px;
+          margin-top: 10px;
+          margin-bottom: 5px;
+     }
+     .menu {
+          display: block;
+          position: absolute;
+          right: 25px;
+          top: 30px;
+     }
+     .nav-list {
+          list-style: none;
+          width: 100%;
+          text-align: center;
+          padding: 20px;
+          display: none;
+     }
+     .nav-list, .list-item {
+          display: block;
+          border-top: 1px solid black;
+          padding: 10px;
+     }
+     .footer-container-fluid {
+          padding: 10px;
+          flex-direction: column;
+          width: 100%;
+          height: 125px;
+     }
+     .footer-logo {
+          margin-top: 5px;
+          width: 45px;
+          height: auto;
+     }
+     .footer-text {
+          font-family: Montserrat Alternates;
+          font-weight: 600;
+          font-style: none;
+          font-size: 28px;
+          line-height: 32px;
+          letter-spacing: 0.03em;
+     }
+     .webmaster-contact {
+          padding: 0;
+          margin: 0;
+     }
+     .footer-info {
+          margin: 0;
+          padding: 0;
+          font-family: Poppins;
+          font-weight: 200;
+          font-size: 17px;
+          text-align: justify;
+          line-height: 21px;
+          letter-spacing: 0.03em;
+     }
+     .webmaster {
+          font-family: Poppins;
+          font-weight: 200;
+          font-size: 16px;
+          color: #94A2FB;
+     }
+     .active {
+          display: block;
+     }
+}
